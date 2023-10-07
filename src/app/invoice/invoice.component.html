@@ -1,0 +1,14 @@
+<div *ngIf="isActive && invoice">
+    <h3>Invoice Details</h3>
+    <p>ID: {{ invoice.idFacture }}</p>
+    <p>Montant: {{ invoice.montantFacture }}</p>
+    <p>Remise: {{ invoice.montantRemise }}</p>
+    <p>Date: {{ invoice.dateFacture }}</p>
+</div>
+  
+<div *ngIf="!isActive">
+    <p>Impossible de visualiser les détails de la facture.</p>
+</div>
+
+
+<button routerLink="/invoice-management">Retour</button>
